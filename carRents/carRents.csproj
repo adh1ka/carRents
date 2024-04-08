@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AA2A0A6-98B5-43F0-9B86-F0D58B34FD5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>carRents</RootNamespace>
+    <AssemblyName>carRents</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2katalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2katalog.Designer.cs">
+      <DependentUpon>2katalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Car Seat\addcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Car Seat\addcs.Designer.cs">
+      <DependentUpon>addcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Car Seat\editCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Car Seat\editCS.Designer.cs">
+      <DependentUpon>editCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Car Seat\mngCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Car Seat\mngCS.Designer.cs">
+      <DependentUpon>mngCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\dbdAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\dbdAdm.Designer.cs">
+      <DependentUpon>dbdAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\mngPlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\mngPlg.Designer.cs">
+      <DependentUpon>mngPlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Mobil\addMobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Mobil\addMobil.Designer.cs">
+      <DependentUpon>addMobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Mobil\editMobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Mobil\editMobil.Designer.cs">
+      <DependentUpon>editMobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Mobil\mngMobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Mobil\mngMobil.Designer.cs">
+      <DependentUpon>mngMobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tipe Identitas\addTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tipe Identitas\addTI.Designer.cs">
+      <DependentUpon>addTI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tipe Identitas\editTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tipe Identitas\editTI.Designer.cs">
+      <DependentUpon>editTI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Tipe Identitas\mngTyp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\Tipe Identitas\mngTyp.Designer.cs">
+      <DependentUpon>mngTyp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\trxHstry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\trxHstry.Designer.cs">
+      <DependentUpon>trxHstry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\User\addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\User\addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\User\editUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\User\editUser.Designer.cs">
+      <DependentUpon>editUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\User\mngUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator\User\mngUser.Designer.cs">
+      <DependentUpon>mngUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\dbrdKyw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\dbrdKyw.Designer.cs">
+      <DependentUpon>dbrdKyw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\Pelanggan Rental\addPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\Pelanggan Rental\addPR.Designer.cs">
+      <DependentUpon>addPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\Pelanggan Rental\editPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\Pelanggan Rental\editPR.Designer.cs">
+      <DependentUpon>editPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\Pelanggan Rental\mngPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\Pelanggan Rental\mngPR.Designer.cs">
+      <DependentUpon>mngPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\addMobilTrx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\addMobilTrx.Designer.cs">
+      <DependentUpon>addMobilTrx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\addTrx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\addTrx.Designer.cs">
+      <DependentUpon>addTrx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\editTrx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\editTrx.Designer.cs">
+      <DependentUpon>editTrx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\mngTrx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karyawan\Transaksi\mngTrx.Designer.cs">
+      <DependentUpon>mngTrx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="katalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="katalog.Designer.cs">
+      <DependentUpon>katalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="koneksi.cs" />
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pengaturan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pengaturan.Designer.cs">
+      <DependentUpon>pengaturan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pengaturan\pengaturan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pengaturan\pengaturan.Designer.cs">
+      <DependentUpon>pengaturan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="2katalog.resx">
+      <DependentUpon>2katalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Car Seat\addcs.resx">
+      <DependentUpon>addcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Car Seat\editCS.resx">
+      <DependentUpon>editCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Car Seat\mngCS.resx">
+      <DependentUpon>mngCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\dbdAdm.resx">
+      <DependentUpon>dbdAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\mngPlg.resx">
+      <DependentUpon>mngPlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Mobil\addMobil.resx">
+      <DependentUpon>addMobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Mobil\editMobil.resx">
+      <DependentUpon>editMobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Mobil\mngMobil.resx">
+      <DependentUpon>mngMobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Tipe Identitas\addTI.resx">
+      <DependentUpon>addTI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Tipe Identitas\editTI.resx">
+      <DependentUpon>editTI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\Tipe Identitas\mngTyp.resx">
+      <DependentUpon>mngTyp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\User\addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\User\editUser.resx">
+      <DependentUpon>editUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator\User\mngUser.resx">
+      <DependentUpon>mngUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\dbrdKyw.resx">
+      <DependentUpon>dbrdKyw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\Pelanggan Rental\addPR.resx">
+      <DependentUpon>addPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\Pelanggan Rental\editPR.resx">
+      <DependentUpon>editPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\Pelanggan Rental\mngPR.resx">
+      <DependentUpon>mngPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\Transaksi\addMobilTrx.resx">
+      <DependentUpon>addMobilTrx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\Transaksi\addTrx.resx">
+      <DependentUpon>addTrx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\Transaksi\editTrx.resx">
+      <DependentUpon>editTrx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karyawan\Transaksi\mngTrx.resx">
+      <DependentUpon>mngTrx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="katalog.resx">
+      <DependentUpon>katalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pengaturan.resx">
+      <DependentUpon>pengaturan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengaturan\pengaturan.resx">
+      <DependentUpon>pengaturan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
